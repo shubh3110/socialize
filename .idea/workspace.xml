@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45b1fc81-ca4e-4cca-8392-e9520468ad1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/socialize_access_application.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/socialize/socialize/SocializeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/socialize/socialize/SocializeApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -71,21 +65,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1267" height="308" key="GridCell.Tab.0.bottom" timestamp="1605545389091">
+    <state width="1267" height="308" key="GridCell.Tab.0.bottom" timestamp="1605545491185">
       <screen x="53" y="27" width="1313" height="741" />
     </state>
-    <state width="1267" height="308" key="GridCell.Tab.0.bottom/53.27.1313.741@53.27.1313.741" timestamp="1605545389091" />
-    <state width="1267" height="308" key="GridCell.Tab.0.center" timestamp="1605545389089">
+    <state width="1267" height="308" key="GridCell.Tab.0.bottom/53.27.1313.741@53.27.1313.741" timestamp="1605545491185" />
+    <state width="1267" height="308" key="GridCell.Tab.0.center" timestamp="1605545491183">
       <screen x="53" y="27" width="1313" height="741" />
     </state>
-    <state width="1267" height="308" key="GridCell.Tab.0.center/53.27.1313.741@53.27.1313.741" timestamp="1605545389089" />
-    <state width="1267" height="308" key="GridCell.Tab.0.left" timestamp="1605545389087">
+    <state width="1267" height="308" key="GridCell.Tab.0.center/53.27.1313.741@53.27.1313.741" timestamp="1605545491183" />
+    <state width="1267" height="308" key="GridCell.Tab.0.left" timestamp="1605545491182">
       <screen x="53" y="27" width="1313" height="741" />
     </state>
-    <state width="1267" height="308" key="GridCell.Tab.0.left/53.27.1313.741@53.27.1313.741" timestamp="1605545389087" />
-    <state width="1267" height="308" key="GridCell.Tab.0.right" timestamp="1605545389090">
+    <state width="1267" height="308" key="GridCell.Tab.0.left/53.27.1313.741@53.27.1313.741" timestamp="1605545491181" />
+    <state width="1267" height="308" key="GridCell.Tab.0.right" timestamp="1605545491184">
       <screen x="53" y="27" width="1313" height="741" />
     </state>
-    <state width="1267" height="308" key="GridCell.Tab.0.right/53.27.1313.741@53.27.1313.741" timestamp="1605545389090" />
+    <state width="1267" height="308" key="GridCell.Tab.0.right/53.27.1313.741@53.27.1313.741" timestamp="1605545491184" />
   </component>
 </project>
