@@ -1,0 +1,113 @@
+{
+  "configuration": {
+    "name": "ppb",
+    "properties": {
+      "property": [
+        {
+          "name": "log-path",
+          "value": "logs/"
+        },
+        {
+          "name": "archive",
+          "value": "logs/archive/"
+        },
+        {
+          "name": "pattern",
+          "value": "%X{requestId} - [%-5level] %d{yyyy-MM-dd'T'HH:mm:ss.SSS'Z'} [%t] %c{1} - %msg%n"
+        },
+        {
+          "name": "jsonPattern",
+          "value": "{\"requestId\" : \"%X{requestId}\",\"level\" : \"%-5level\",\"time\" : \"%d{yyyy-MM-dd'T'HH:mm:ss.SSS'Z'}\",\"thread\" : \"%t\",\"class\" : \"%c{1}\",\"message\" : \"%msg\"}%n"
+        }
+      ]
+    },
+    "appenders": {
+      "Console": {
+        "name": "Console-Appender",
+        "target": "SYSTEM_OUT",
+        "PatternLayout": {
+          "pattern": "${pattern}"
+        }
+      },
+      "RollingFile": [
+        {
+          "name": "RollingLogFile-Appender",
+          "fileName": "${log-path}/socialize_access_application.log",
+          "filePattern": "${archive}/socialize_access_application.log.%d{yyyy-MM-dd}-%i.gz",
+          "PatternLayout": {
+            "pattern": "${pattern}"
+          },
+          "Policies": {
+            "SizeBasedTriggeringPolicy": {
+              "size": "1 GB"
+            }
+          },
+          "DefaultRolloverStrategy": {
+            "max":"100000"
+          }
+        }
+      ]
+    },
+    "loggers": {
+      "logger": [
+        {
+          "name": "com.socialize",
+          "level": "info",
+          "additivity": "false",
+          "appender-ref": [
+            {
+              "ref": "RollingLogFile-Appender",
+              "level": "debug"
+            }
+          ]
+        },
+        {
+          "name": "org.hibernate.SQL",
+          "level": "info",
+          "additivity": "false",
+          "appender-ref": [
+            {
+              "ref": "RollingLogFile-Appender",
+              "level": "debug"
+            }
+          ]
+        },
+        {
+          "name": "org.hibernate.type.descriptor.sql",
+          "level": "info",
+          "additivity": "false",
+          "appender-ref": [
+            {
+              "ref": "RollingLogFile-Appender",
+              "level": "debug"
+            }
+          ]
+        },
+        {
+          "name": "com.jcraft.jsch",
+          "level": "error",
+          "additivity": "false",
+          "appender-ref": [
+            {
+              "ref": "RollingLogFile-Appender",
+              "level": "debug"
+            }
+          ]
+        }
+      ],
+      "root": {
+        "level": "info",
+        "appender-ref": [
+          {
+            "ref": "Console-Appender",
+            "level": "info"
+          },
+          {
+            "ref": "RollingLogFile-Appender",
+            "level": "info"
+          }
+        ]
+      }
+    }
+  }
+}
